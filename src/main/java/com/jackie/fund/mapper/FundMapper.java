@@ -4,6 +4,9 @@ import com.jackie.stockbean.fund.entity.Fund;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Options;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA
@@ -23,4 +26,7 @@ public interface FundMapper {
     @Insert("insert into fund(code, name, distribute, stock_distribute) " +
             "values(#{code}, #{name}, #{distribute}, #{stockDistribute})")
     void insert(Fund fund);
+
+    @Select("select * from fund")
+    List<Fund> findAll();
 }

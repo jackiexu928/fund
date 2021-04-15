@@ -34,7 +34,7 @@ public class SwaggerConfig {
 
     private ApiInfo buildApiInf() {
         return new ApiInfoBuilder()
-                .title("基金系统API文档")
+                .title("Fund系统API文档")
                 .contact(new Contact("stock-fund", "http://www.baidu.com",
                         "343141195@qq.com"))
                 .version("1.0")
