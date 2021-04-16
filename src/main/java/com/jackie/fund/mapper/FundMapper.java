@@ -29,4 +29,9 @@ public interface FundMapper {
 
     @Select("select * from fund")
     List<Fund> findAll();
+
+    @Select("select * from fund where code = #{code}")
+    Fund findByCode(String code);
+
+
 }
