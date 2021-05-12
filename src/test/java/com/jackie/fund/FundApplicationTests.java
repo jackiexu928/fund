@@ -23,4 +23,8 @@ class FundApplicationTests {
         System.out.println(investorClient.getAllInvestor());
     }
 
+    void shareClientTest(){
+
+    }
+
 }
