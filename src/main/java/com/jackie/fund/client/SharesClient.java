@@ -12,7 +12,7 @@ import java.util.List;
  * @author xujj
  * @date 2021/4/15
  */
-@FeignClient("shares")
+@FeignClient(value = "shares")
 public interface SharesClient {
 
     @GetMapping("/supervise/getStockPercentage")
